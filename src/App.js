@@ -128,29 +128,31 @@ const App = () => {
   return (
     data && data.length > 0 ?
     <div className="d-flex container-fluid h-100 pt-3" style={{maxWidth:'1400px'}}>
-      <div className="col-7 pr-5">
-        <img src={data[3]['snippet']['thumbnails']['high']['url']} alt="img" className="w-100 img-border" height="400"></img>
-        <div className="p-3">
-          <div className="d-flex mb-4 w-100 align-items-center">
-            <div className="progress mr-3" style={{width:'85%'}}>
-              <div className="progress-bar w-25"></div>
+      <div className="row">
+        <div className="col-12 col-lg-7 pr-lg-5">
+          <img src={data[3]['snippet']['thumbnails']['high']['url']} alt="img" className="w-100 img-border" height="400"></img>
+          <div className="p-3">
+            <div className="d-flex mb-4 w-100 align-items-center">
+              <div className="progress mr-3" style={{width:'85%'}}>
+                <div className="progress-bar w-25"></div>
+              </div>
+              <small className="ml-auto text-secondary">17:9/120:20</small>
             </div>
-            <small className="ml-auto text-secondary">17:9/120:20</small>
+            <Tabs data={data}/>
           </div>
-          <Tabs data={data}/>
         </div>
-      </div>
-      <div className="col-5 p-0">
-        <h5 className="bg-light pl-3 pr-3 pt-2 pb-2 text-dark" style={{borderRadius:'16px',display:'inline-block'}}>Recommended</h5>
-        <List className="mt-4"
-            height={200 * data.length}
-            itemCount={data.length}
-            itemSize={200}
-            itemData={{item:data,otherData: true}}
-            style={{width:'100%',overflow:'hidden'}}
-          >
-            {RightPanel}
-        </List>
+        <div className="col-12 col-lg-5">
+          <h5 className="bg-light pl-3 pr-3 pt-2 pb-2 text-dark" style={{borderRadius:'16px',display:'inline-block'}}>Recommended</h5>
+          <List className="mt-4"
+              height={200 * data.length}
+              itemCount={data.length}
+              itemSize={200}
+              itemData={{item:data,otherData: true}}
+              style={{width:'100%',overflow:'hidden'}}
+            >
+              {RightPanel}
+          </List>
+        </div>
       </div>
     </div>
     : <h1 className="d-flex align-items-center justify-content-center bg-light h-100">Loading...</h1>
