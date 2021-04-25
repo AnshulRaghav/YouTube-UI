@@ -52,8 +52,8 @@ const Tabs = props => {
             )
           })}
       </div>
-      <div className="w-100 d-flex">
-        <div className="tab-content w-75 mt-3">
+      <div className="w-100 d-flex mt-3">
+        <div className="tab-content w-75">
           <h2 className="title">{props.data[tab] ? props.data[tab]['snippet']['title'].replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>') : null}</h2>
         </div>
         <div className="d-flex w-25 justify-content-end">
@@ -63,12 +63,12 @@ const Tabs = props => {
       </div>
       <div className="d-flex w-100 mt-3">
         <div className="w-75">
-          <p>{props.data[tab] ? props.data[tab]['snippet']['description'] : null}</p>
+          <p style={{textAlign:'justify'}}>{props.data[tab] ? props.data[tab]['snippet']['description'] : null}</p>
         </div>
-        <div className="w-25 d-flex justify-content-end">
+        <div className="w-25 d-flex justify-content-end pl-3">
           {[0,1,2,3,4].map((index) => {
             return(
-              <IoStarOutline size={25} key={index}></IoStarOutline>
+              <IoStarOutline size={25} key={index} className="pl-1" color="#FFC32B"></IoStarOutline>
             )
           })}
         </div>
