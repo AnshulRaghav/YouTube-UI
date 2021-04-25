@@ -16,3 +16,70 @@ body
   text-align: center;
 }
 
+.img-border{
+  border-radius: 16px;
+}
+
+.progress{
+  height: 6px;
+}
+
+.progress-bar{
+  background-color: #6F5DE0;
+}
+
+.nav-link
+{
+  background-color: #EDE9EA !important;
+  color: #6F5DE0;
+  margin-right: 16px;
+  border-radius: 16px !important;
+}
+
+.nav-link:not(.active):hover{
+  color: #6F5DE0 !important;
+}
+
+.nav-link.active
+{
+  background-color: #6F5DE0 !important;
+  box-shadow: 2px 4px 10px rgba(111, 93, 224, .5);
+}
+
+.tab-enter{
+  max-width: 80px;
+}
+
+.tab-enter-active{
+  max-width: 224px;
+  transition: max-width 1000ms;
+}
+
+.tab-enter-done{
+  max-width: 'auto';
+}
+
+.tab-exit{
+  max-width: 'auto';
+}
+
+.tab-exit-active{
+  max-width: 224px;
+  transition: max-width 1000ms;
+}
+
+.tab-exit-done{
+  max-width: 80px;
+}
+
+.text-ellipses{
+  display: -webkit-box;
+  margin: 0;
+  max-width: 242px;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
