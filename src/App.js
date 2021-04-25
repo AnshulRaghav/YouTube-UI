@@ -53,8 +53,8 @@ const Tabs = props => {
           })}
       </div>
       <div className="w-100 d-flex">
-        <div className="tab-content w-75">
-          <h2 className="mt-3 title">{props.data[tab] ? props.data[tab]['snippet']['title'].replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>') : null}</h2>
+        <div className="tab-content w-75 mt-3">
+          <h2 className="title">{props.data[tab] ? props.data[tab]['snippet']['title'].replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>') : null}</h2>
         </div>
         <div className="d-flex w-25 justify-content-end">
             <IoShareSocialOutline size={40} className="pl-3"></IoShareSocialOutline>
