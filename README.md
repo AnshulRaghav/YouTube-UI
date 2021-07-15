@@ -1,4 +1,4 @@
-# YouTube-UI
+# YouTube-UI(ReactJS)
 ![Screenshot](https://github.com/AnshulRaghav/YouTube-UI/blob/master/Desktop%20UI.png)
 
 Redesigned feed UI for biggest online video sharing and social media platform.
