@@ -7,4 +7,5 @@ The data for UI is fetched using YouTUbe api.
 ## Features
 - Aesthetic design
 - Responsive UI
-- API consumption usinf fetch
+- API consumption using fetch
+- Smooth Animations
