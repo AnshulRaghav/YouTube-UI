@@ -10,3 +10,8 @@ The data for UI is fetched using YouTUbe api.
 - Responsive UI
 - API consumption using fetch
 - Smooth Animations
+
+To use the repo:
+- clone the repo
+- install npm packages
+- run server using <b>npm start</b>
