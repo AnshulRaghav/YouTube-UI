@@ -3,7 +3,7 @@
 
 Redesigned feed UI for biggest online video sharing and social media platform YouTube using popular frontend framework <b>ReactJs</b>.
 The UI design is responsive.
-The data for UI is fetched using YouTUbe api.
+The data for UI is fetched using YouTube api.
 
 ## Features
 - Aesthetic design
