@@ -13,5 +13,5 @@ The data for UI is fetched using YouTUbe api.
 
 ### To use this repo:
 - clone the repo
-- install npm packages
+- install npm packages($ npm install)
 - run server using <b>npm start</b>
