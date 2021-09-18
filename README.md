@@ -19,4 +19,4 @@ The data for UI is fetched using YouTube api.
 - run server using <b>npm start</b>
 
 
-### Access live project - https://yt-reactjs.herokuapp.com
+### Live project😎 - https://yt-reactjs.herokuapp.com
