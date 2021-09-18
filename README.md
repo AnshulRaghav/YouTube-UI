@@ -15,5 +15,5 @@ The data for UI is fetched using YouTube api.
 - clone the repo
 - install npm packages($ npm install)
 - create .env file at root of the project.
-- add REACT_APP_API_KEY='API KEY'. Obtain API key from(https://console.developers.google.com/)
+- add environment vaiable REACT_APP_API_KEY='API KEY'. Obtain API key from(https://console.developers.google.com/)
 - run server using <b>npm start</b>
